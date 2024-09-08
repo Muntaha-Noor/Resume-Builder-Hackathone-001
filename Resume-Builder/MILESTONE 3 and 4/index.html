@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form id="resumeForm">
+        <h2>Personal Information</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="contact">Contact No:</label>
+        <input type="text" id="contact" name="contact" required><br><br>
+      
+        <h2>Education</h2>
+        <label for="education">Degree:</label>
+        <input type="text" id="education" name="education" required><br><br>
+      
+        <h2>Work Experience</h2>
+        <label for="company">Company Name:</label>
+        <input type="text" id="company" name="company"><br>
+        <label for="role">Your Role:</label>
+        <input type="text" id="role" name="role"><br><br>
+      
+        <h2>Skills</h2>
+        <label for="skills">Skills:</label>
+        <input type="text" id="skills" name="skills" placeholder="e.g. JavaScript, HTML, CSS"><br><br>
+
+        <h2>About Me</h2>
+        <label for="about">Tell Us About Yourself:</label>
+        <input type="text" id="about" name="about" placeholder="Hi, I am Abdullah..."><br><br>
+      
+        <button type="submit">Generate Resume</button>
+        <button id="downloadPdf">Download PDF</button>
+    </form>
+
+    <div id="resumeDisplay"></div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
